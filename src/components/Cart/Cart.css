@@ -44,8 +44,7 @@
 .buttons{
     position: absolute;
     bottom: 0px;
-    /* background-color: #1C2B35; */
-    /* width: 100%; */
+    width: 100%;
 }
 
 .buttons button{
@@ -56,6 +55,7 @@
     margin-bottom: 20px;
     font-size: 15px;
     cursor: pointer;
+    width: 100%;
 }
 
 .buttons button:hover{
