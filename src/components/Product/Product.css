@@ -42,9 +42,28 @@
 .product button:hover{
     background-color: #1C2B35;
     color: white;
-    font-size: 20px;
 }
 
 button p{
     margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .product{
+        width: 200px;
+    }
+    
+    .product-img img{
+        width: 150px;
+        height: 200px;
+    }
+    
+    .product-info{
+        margin: 10px 0;
+    }
+    
+    .product button{
+        padding: 5px;
+        font-size: 15px;
+    }
 }

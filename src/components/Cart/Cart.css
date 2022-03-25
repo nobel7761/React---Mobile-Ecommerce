@@ -1,11 +1,10 @@
 .cart{
+    position: relative;
     position: sticky;
     top: 0;
     height: 100vh;
     background-color: #FFE0B3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
 }
 
 .cart h1{
@@ -19,18 +18,58 @@
     color: orangered;
 }
 
-.cart button{
+
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px 5px;
+}
+
+.cart-item img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.trash-icon{
+    color: red;
+    cursor: pointer;
+    font-size: 30px;
+}
+.buttons{
+    position: absolute;
+    bottom: 0px;
+    /* background-color: #1C2B35; */
+    /* width: 100%; */
+}
+
+.buttons button{
     border: none;
     background-color: #1C2B35;
     padding: 15px;
     color: white;
     margin-bottom: 20px;
-    width: 100%;
     font-size: 15px;
     cursor: pointer;
 }
 
-.cart button:hover{
+.buttons button:hover{
     border-radius: 5px;
     color: orangered;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .cart h1{
+        font-size: 15px;
+    }
+    .cart button{
+        padding: 8px;
+        font-size: 10px;
+    }
 }
