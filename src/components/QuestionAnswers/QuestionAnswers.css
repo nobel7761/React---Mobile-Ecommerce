@@ -1,0 +1,11 @@
+.accordion__button {
+    background-color: #1C2B35;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.accordion__button:hover {
+    background-color: #1C2B35;
+    color: orangered;
+}
