@@ -3,7 +3,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import './Cart.css';
 
-const Cart = ({ carts, chooseAgain }) => {
+const Cart = ({ carts, chooseAgain, chooseOne }) => {
     // console.log(props);
 
     return (
@@ -22,7 +22,7 @@ const Cart = ({ carts, chooseAgain }) => {
             }
 
             <div className='buttons'>
-                <button>Choose 1 for Me</button> <br />
+                <button onClick={() => chooseOne(carts)}>Choose 1 for Me</button> <br />
                 <button onClick={chooseAgain}>Choose Again</button>
             </div>
         </div>

@@ -14,14 +14,25 @@ const Shop = () => {
 
     const addToCart = (product) => {
         // console.log(product, "Clicked");
+        const cartItems = [...cart, product]
 
-        setCart([...cart, product]);
-        console.log(cart)
+        setCart(cartItems);
+        // console.log(cartItems)
+    }
+
+    const chooseOne = (selectedCarts) => {
+        console.log("Selected all cart: ", selectedCarts);
+        const index = Math.floor(Math.random() * 3);
+        const luckyCart = selectedCarts[index]
+        console.log("Lucky Carts: ", luckyCart)
+        setCart([luckyCart]);
     }
 
     const chooseAgain = () => {
         setCart([]);
     }
+
+
     return (
         <div className='shop-container'>
             <div>
@@ -36,7 +47,7 @@ const Shop = () => {
                 </div>
             </div>
             <div className='cart-container'>
-                <Cart carts={cart} chooseAgain={chooseAgain}></Cart>
+                <Cart carts={cart} chooseAgain={chooseAgain} chooseOne={chooseOne}></Cart>
             </div>
 
         </div>
