@@ -1,5 +1,4 @@
 .cart{
-    position: relative;
     position: sticky;
     top: 0;
     height: 100vh;
@@ -41,11 +40,7 @@
     cursor: pointer;
     font-size: 30px;
 }
-.buttons{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
+
 
 .buttons button{
     border: none;

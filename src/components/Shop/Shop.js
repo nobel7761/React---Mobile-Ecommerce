@@ -13,8 +13,25 @@ const Shop = () => {
     }, [])
 
     const addToCart = (product) => {
-        const cartItems = [...cart, product]
-        setCart(cartItems);
+        // console.log(product);
+        const duplicateProduct = cart.find(p => p === product)
+        const cartLength = [...cart, product].length;
+        console.log(cartLength)
+        if (duplicateProduct) {
+            alert(`${duplicateProduct.name} already in the cart!\nYou can not add a product twice in the cart!!!`)
+        }
+
+        else if (cartLength > 4) {
+            alert("You can not able to add more than 4 items in the cart");
+        }
+
+        else {
+            const cartItems = [...cart, product]
+            setCart(cartItems);
+        }
+
+
+
     }
 
     const chooseOne = (selectedCarts) => {
