@@ -13,18 +13,13 @@ const Shop = () => {
     }, [])
 
     const addToCart = (product) => {
-        // console.log(product, "Clicked");
         const cartItems = [...cart, product]
-
         setCart(cartItems);
-        // console.log(cartItems)
     }
 
     const chooseOne = (selectedCarts) => {
-        console.log("Selected all cart: ", selectedCarts);
         const index = Math.floor(Math.random() * 3);
         const luckyCart = selectedCarts[index]
-        console.log("Lucky Carts: ", luckyCart)
         setCart([luckyCart]);
     }
 
