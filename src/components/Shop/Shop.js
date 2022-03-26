@@ -35,9 +35,15 @@ const Shop = () => {
     }
 
     const chooseOne = (selectedCarts) => {
-        const index = Math.floor(Math.random() * 3);
-        const luckyCart = selectedCarts[index]
-        setCart([luckyCart]);
+        const totalCartItems = selectedCarts.length;
+        if (totalCartItems < 2) {
+            alert("Please add minimum 2 items to choose 1 randomly")
+        }
+        else {
+            const index = Math.floor(Math.random() * totalCartItems);
+            const luckyCart = selectedCarts[index]
+            setCart([luckyCart]);
+        }
     }
 
     const chooseAgain = () => {

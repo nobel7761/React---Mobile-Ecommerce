@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Mobile Gadget BD Simple E-commerce Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project made using [React](https://reactjs.org/)
 
 ## Available Scripts
 
